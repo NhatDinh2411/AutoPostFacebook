@@ -1,0 +1,5 @@
+requests
+openai
+transformers
+beautifulsoup4
+python-dotenv
