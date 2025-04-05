@@ -4,7 +4,7 @@ import os
 from typing import List
 
 def createAnalysis(detail_papers: List, OPENAI_KEY:str):
-    client = OpenAI(token=OPENAI_KEY)
+    client = OpenAI(api_key=OPENAI_KEY)
     detail_info = '\n\n'.join(detail_papers)
     response_text = client.responses.create(
         model="gpt-4o-mini-2024-07-18",

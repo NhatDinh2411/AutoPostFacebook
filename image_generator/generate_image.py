@@ -6,7 +6,7 @@ from typing import List
 
 def generate_image(prompt: str, OPENAI_KEY:str, save_path:str):
 
-    client = OpenAI(token=OPENAI_KEY)
+    client = OpenAI(api_key=OPENAI_KEY)
     response_img = client.images.generate(
         model="dall-e-2",
         prompt=prompt,
